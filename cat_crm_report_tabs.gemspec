@@ -4,12 +4,12 @@ require "cat_crm_report_tabs/version"
 
 Gem::Specification.new do |s|
   s.name        = "cat_crm_report_tabs"
-  s.version     = CatCrmReportTabs::VERSION
+  s.version     = "0.1"
   s.authors     = ["Sean Cleveland"]
   s.email       = ["sean.b.cleveland@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{This adds tabs for student and load reports for cat_crm}
+  s.description = %q{This adds tabs for student and load reports for cat_crm}
 
   s.rubyforge_project = "cat_crm_report_tabs"
 
