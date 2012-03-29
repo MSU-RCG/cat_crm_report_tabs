@@ -1,10 +1,10 @@
 require "fat_free_crm"
 
 FatFreeCRM::Plugin.register(:crm_sample_tabs, initializer) do
-          name "Sample Tabs"
-        author "Michael Dvorkin"
+          name "Cat CRM Report Tabs"
+        author "Sean Cleveland"
        version "0.1"
-   description "Demonstrates how to add new tabs to Fat Free CRM"
+   description "Adds tabs for the student and lead reports"
   dependencies :haml
 
            # The tab syntax is as follows:
@@ -18,19 +18,19 @@ FatFreeCRM::Plugin.register(:crm_sample_tabs, initializer) do
            # For example, the following adds new main tab [Apples], which invokes #index in
            # plugin's app/controllers/apples_controller.rb.
            #-----------------------------------------------------------------------------------
-           tab :main, :text => "Apples", :url => { :controller => "apples" }
+           tab :main, :text => "Student Reports", :url => { :controller => "student_reports" }
 
            # If first parameter is :main, it can be omitted. The following example adds new main
            # tab [Oranges], which invokes #index in plugin's app/controllers/oranges_controller.rb.
            #-----------------------------------------------------------------------------------
-           tab :text => "Oranges", :url => { :controller => "oranges" }
+           tab :text => "Lead Reports", :url => { :controller => "lead_reports" }
 
            # For ultimate control over tabs use block syntax. The following example inserts new
            # Admin tab [Bananas] after the [Users] tab. The [Bananas] tab invokes #index in
            # app/controllers/admin/bananas_controller.rb.
            #-----------------------------------------------------------------------------------
            tab :admin do |tabs|
-             tabs.insert(1, { :text => "Bananas", :url => { :controller => "bananas" } })
+             #tabs.insert(1, { :text => "Bananas", :url => { :controller => "bananas" } })
              #
              # More examples:
              #

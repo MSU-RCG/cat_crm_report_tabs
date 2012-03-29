@@ -1,4 +1,4 @@
-class Admin::BananasController < Admin::ApplicationController
+class Admin::TestsController < Admin::ApplicationController
   unloadable # See http://dev.rubyonrails.org/ticket/6001
   before_filter :set_current_tab
   
